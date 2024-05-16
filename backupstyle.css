@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.15s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #2c7444;
+    display: block;
+    transition: 0.2s ease-in-out;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #8ebc9b;
+}
+
+section nav .icon i{
+    color: white;
+    font-size: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: #2c7444;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 130px;
+    position: relative;
+
+}
+
+section .main .men_text h1{
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+    font-family: Bradley Hand, cursive;
+}
+
+section .main .men_text h1 span{
+    margin-left: 15px;
+    color: #2c7444;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section .main .main_image .main-image-animation{
+    width: 700px;
+    position: relative;
+    left: 70px;
+    animation: float 3s linear infinite;
+}
+
+section p{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 120px;
+    bottom: 120px;
+    line-height: 22px;
+}
+
+section .main-btn{
+    background: black;
+    position: relative;
+    left: 120px;
+    bottom: 30px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+section .main-btn a {
+    color: white;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .main-btn i{
+    color: white;
+    transition: 0.3s;    
+}
+
+section .main-btn:hover i{
+    transform: translateX(25px);
+}
+
+/*-------------------------------------MENU--------------------------------------------------->*/
+
+.menu{
+    width: 100%;
+    padding: 70px 0;
+}
+.menu h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menu h1 span{
+    color: #2c7444;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #2c7444;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.menu .menu_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.menu .menu_box .menu_card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu .menu_box .menu_card .menu_image{
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu .menu_box .menu_card .menu_image .menuimage1{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+    padding-left: 20px;
+}
+
+.menu .menu_box .menu_card .menu_image:hover .menuimage1{
+    transform: scale(1.5);
+}
+
+/*!-------------------------------------NEWSLETTER--------------------------------------------------->*/
+
+.newsletter{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/background1.png);
+    background-size: cover;
+    background-position: left;
+    padding: 10px 10px;
+    color: #fff;
+}
+
+.newsletter-main{
+    padding: 0 60px 0;
+}
+
+.newsletter-main h3{
+    margin-top: 15%;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.newsletter-main h1{
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.newsletter-main p{
+    margin: 10px 0 50px;
+}
+
+.newsletter-main form{
+    background: #fff;
+    display: flex;
+    width: fit-content;
+}
+
+.newsletter-main form input{
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    height: 70px;
+    width: 4--px;
+    font-size: 16px;
+}
+
+.newsletter-main form button{
+    background: #2c7444;
+    border: none;
+    outline: none;
+    height: 70px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.newsletter-main span{ 
+    color: #8ebc9b;
+    margin-top: 10px;
+    display: block;
+}
+
+
+/*!-------------------------------------FOOTER--------------------------------------------------->*/
+.site-footer {
+    background-color: black;
+    padding: 50px 0;
+}
+
+.site-footer h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.site-footer p {
+    color: white;
+}
+
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer ul li {
+    margin-bottom: 10px;
+}
+
+.site-footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-footer ul li a:hover {
+    color: white;
+}
+
+.site-footer address {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.site-footer .fa {
+    margin-right: 5px;
+}
+
+.site-footer p.copyright {
+    margin-top: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .site-footer {
+        text-align: center;
+    }
+}

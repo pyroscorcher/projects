@@ -1,0 +1,36 @@
+/* CSS HEX */
+--sea-green: #2c7444;
+--gin: #e0ede4;
+--oxley: #779b84;
+--summer-green: #93bba4;
+--spring-leaves: #528463;
+--summer-green: #8ebc9b;
+--spring-leaves: #5b9174;
+--viridian: #448c60;
+--fruit-salad: #448c60;
+
+
+/* SCSS HEX */
+$sea-green: #2c7444;
+$gin: #e0ede4;
+$oxley: #779b84;
+$summer-green: #93bba4;
+$spring-leaves: #528463;
+$summer-green: #8ebc9b;
+$spring-leaves: #5b9174;
+$viridian: #448c60;
+$fruit-salad: #549c6c;
+
+
+/* SCSS RGB */
+--sea-green: rgba(44,116,68,1);
+--gin: rgba(224,237,228,1);
+--oxley: rgba(119,155,132,1);
+--summer-green: rgba(147,187,164,1);
+--spring-leaves: rgba(82,132,99,1);
+--summer-green: rgba(142,188,155,1);
+--spring-leaves: rgba(91,145,116,1);
+--viridian: rgba(68,140,96,1);
+--fruit-salad: rgba(84,156,108,1);
+
+
