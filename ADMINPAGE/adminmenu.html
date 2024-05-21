@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es Teler Admin Page</title>
+    <link rel="stylesheet" href="adminstyle.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f9ecb047e.js" crossorigin="anonymous"></script>
+<body>
+    <!-------------------------------------SIDEBAR--------------------------------------------------->
+
+    <div class="sidebar">
+        <div class="logo">
+            <ul class="menu">
+
+                <li>
+                    <a href="admindashboard.html" >
+                        <i class="fa fa-tachometer"></i>
+                        <span>Dashboard</span>
+
+                    </a>
+                </li>
+
+                <li  class="active">
+                    <a href="adminmenu.html">
+                        <i class="fa fa-pizza-slice"></i>
+                        <span>Menu</span>
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="adminnewsletter.html">
+                        <i class="fa-sharp fa fa-envelope"></i>
+                        <span>Newsletter</span>
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="adminpesan.html">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>Pesan</span>
+
+                    </a>
+                </li>
+
+                <li class="logout">
+                    <a href="#">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+<!-------------------------------------MAIN--------------------------------------------------->
+<div class="container">
+        <h1>Masukkan Menu</h1>
+        <form id="crudForm">
+            <input type="text" id="ID" placeholder="ID" required>
+            <input type="text" id="namamenu" placeholder="Nama Menu" required>
+            <input type="number" id="harga" placeholder="Harga" required>
+            <input type="text" id="gambar" placeholder="Gambar" required>
+            <input type="text" id="deskripsi" placeholder="Deskripsi Menu" required>
+            <button type="submit">Add</button>
+        </form>
+        <table id="crudTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama Menu</th>
+                    <th>Harga</th>
+                    <th>Gambar</th>
+                    <th>Deskripsi Menu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+</div>
+    <script src="adminscript.js"></script>
+</body>
+</html>

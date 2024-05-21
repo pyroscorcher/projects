@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green: #2c7444;
+    --lightgreen: #8ebc9b;
+    --white: #fff;
+    --black: rgb(0,0,0);
+    --lowopacity: rgba(255, 255, 255, .8);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    display: flex;
+}
+
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 140px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: var(--white);
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: var(--green);
+}
+
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+
+.logo{
+    height: 80px;
+    padding: 5px;
+}
+
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover, .active{
+    background: #eaeaea;
+}
+
+.menu a{
+    color: var(--white);
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span{
+    overflow: hidden;
+}
+
+.menu a i{
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+/* main content */
+
+.main-content{
+    position: relative;
+    background: #eaeaea;
+    width: 60%;
+    padding: 1rem;
+}
+
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header--title{
+    color: var(--green);
+}
+
+.user--info{
+    display: flex;
+    align-items: center;
+    gap: 1;
+}
+
+.search--box{
+    background: #eaeaea;
+    border-radius: 15px;
+    color: #eaeaea;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.search--box input{
+    background: var(--lowopacity);
+    padding: 10px;
+}
+
+.search--box i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transform: all 0.5s ease-out;
+}
+
+.search--box i:hover{
+    transform: scale(1.2);
+}
+
+
+/* CRUD STYLE */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td button {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+td .edit {
+    background-color: #007bff;
+    color: white;
+}
+
+td .edit:hover {
+    background-color: #0056b3;
+}
+
+td .delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+td .delete:hover {
+    background-color: #c82333;
+}
+

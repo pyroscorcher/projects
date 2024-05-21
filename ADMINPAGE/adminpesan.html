@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es Teler Admin Page</title>
+    <link rel="stylesheet" href="adminstyle.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f9ecb047e.js" crossorigin="anonymous"></script>
+<body>
+    <!-------------------------------------SIDEBAR--------------------------------------------------->
+
+    <div class="sidebar">
+        <div class="logo">
+            <ul class="menu">
+
+                <li>
+                    <a href="admindashboard.html" >
+                        <i class="fa fa-tachometer"></i>
+                        <span>Dashboard</span>
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="adminmenu.html">
+                        <i class="fa fa-pizza-slice"></i>
+                        <span>Menu</span>
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="adminnewsletter.html">
+                        <i class="fa-sharp fa fa-envelope"></i>
+                        <span>Newsletter</span>
+
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="adminpesan.html">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>Pesan</span>
+
+                    </a>
+                </li>
+
+                <li class="logout">
+                    <a href="#">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+<!-------------------------------------MAIN--------------------------------------------------->
+<div class="container">
+    <h1>Pesan</h1>
+    <table class="message-table">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Pesan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+    <style>
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 24px;
+}
+
+.message-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.message-table th,
+.message-table td {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+.message-table th {
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+.message-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.message-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+    </style>
+</div>
+</body>
+</html>
